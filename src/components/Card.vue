@@ -1,21 +1,40 @@
 <template>
-    <div class="container">
-        <div class="card">
-            <div class="card-head">
-                <slot name="card-header"></slot>
-            </div>
+    <div class="card" style="width: 18rem;">
 
-            <div class="card-body">
-                <slot name="card-body"></slot>
-            </div>
+                <div class="card-header">
+            <slot name="cardHeader"></slot>
         </div>
+
+        <div class="card-body">
+            <slot name="cardBody"></slot>
+        </div>
+
     </div>
 </template>
 
 <script>
 export default {
+    name: "CardS",
+    /* props: ["firstName", "lastName", "id"] */
 
 }
 </script>
 
-<style></style>
+<style>
+img {
+    width: 200px;
+    height: 200px;
+}
+
+/* .card {
+    width: 4rem;
+    padding: 0px;
+    background-color: rgb(81, 0, 255);
+} */
+
+/* .card-head,
+.card-body {
+    width: 50%;
+    background-color: aqua;
+} */
+</style>

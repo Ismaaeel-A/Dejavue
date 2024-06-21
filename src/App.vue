@@ -1,15 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <div class="row">
+      <FriendS />
+    </div>
+
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+/* import HelloWorld from './components/HelloWorld.vue' */
+import FriendS from './components/Friends.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    FriendS
   }
 }
 </script>
@@ -23,4 +28,6 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+
 </style>
